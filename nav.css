@@ -1,0 +1,68 @@
+* {transition: 0.5s}
+
+*, *:before, *:after {box-sizing: border-box;}
+
+body, html {
+  height: 100vh;
+  background: rgb(245,245,245);
+  font-family: 'Raleway', sans-serif, Arial;
+}
+
+.cover {background: rgba(245,245,245,1);}
+
+#nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#nav a {display: block; text-decoration: none;}
+#nav a:hover {background: rgb(245,110,110); cursor: pointer;}
+
+#menu {
+  width: 47px;
+  height: 40px;
+  margin: 20px 20px 0 0;
+  display: inline-block;
+  opacity: 1;
+  float: right;
+  transition: 0.5s;
+}
+#menu, #menu div, a {cursor: pointer;}
+
+#menu div {
+  width: 47px;
+  height: 7px;
+  background: rgb(55,55,55);
+  border-radius: 1px;
+  transform-origin: center center 0; 
+  transition: 0.5s;
+}
+
+/* Middle Bar */
+#menu div:nth-child(2) {margin: 9px 0;}
+
+/* Diagonal Nav */
+#nav nav {margin-top: 81px;}
+
+/* Links */
+#nav a {
+  width: 280px;
+  height: 60px;
+  padding-left: 20px;
+  margin-top: -2px;
+  background: rgb(235,85,85);
+  border: 2px solid white;
+  color: rgb(245,245,245);
+  font-size: 28px;
+  line-height: 55px;
+  text-decoration: none;
+  font-style: italic;
+  transform: skew(10deg) translateX(350px);
+}
+/* 2nd to 6th Link */
+#nav a:nth-child(2){margin-left: 10px;}
+#nav a:nth-child(3){margin-left: 20px;}
+#nav a:nth-child(4){margin-left: 30px;}
+#nav a:nth-child(5){margin-left: 40px;}
+#nav a:nth-child(6){margin-left: 50px;}
