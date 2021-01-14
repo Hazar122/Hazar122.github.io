@@ -1,91 +1,59 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#navi {
+	left: 0px;
+	right: 0px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 45px;
 }
 
-:root {
---primary-color: #D96AA7;
---secondary-color: #422C73;
---complimentary-color: #88BFB5;
---contrast-color: #F2E527;
---light-color: #D2A9D9;
+#navi2{
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 15px;
+
 }
 
-.container {
-  background: #191919;
-  min-height: 100vh;
-  font-family: Montserrat, sans-serif;
+#navi3{
+	color: white								!important;
+}
+#navi4{
+	color: white;
+    list-style: square;
+    float: none;	
+	width: 100%;
+}
+#navi5{
+	list-style-type: square;
+	color: white;
 }
 
-nav a {
-    font-size: 40px;
-    color: #fff;
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
+#navspan{
+	color: white                                !important;
+	cursor: pointer;
+    text-decoration: underline;
 }
 
-nav {
-    position: fixed;
-    left: 0;
-    z-index: 50;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 100vh;
-    background: var(--secondary-color);
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-section {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 0;
-    opacity: 0;
-    transition: all ease-in .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-
-section h1 {
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    opacity: 0;
+.dropdown-content {
+  display: ;
+  display: ;
+  background-color: #333;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 }
 
-/* Styles applied on trigger */
-section:target {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
-
-section:target h1 {
-    opacity: 0;
-    animation: 2s fadeIn forwards .5s;
-}
-
-#first {
-  background:var(--primary-color);
-}
-#second {
-    background: var(--complimentary-color);
-}
-
-#third {
-    background: var(--contrast-color);
-}
-
-#fourth {
-    background: var(--light-color);
-}
-
-@keyframes fadeIn {
-    100% { opacity:1 }
+.dropdown:hover .dropdown-content {
+  display: block;
 }
