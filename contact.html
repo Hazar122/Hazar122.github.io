@@ -4,17 +4,17 @@
 		<link href="nav.css" rel="stylesheet">
 		
 		<script>
-			$(function() {
+			function myFunction(){
 				var i, nav;
-				nav =  document.getElementsByTagName("nav");
+				nav =  document.getElementsByTagName("nav")
 				for (i=0; i<nav[0].children[0].childElementCount; i++){
 					nav[0].children[0].children[i].style.width = 100/ nav[0].children[0].childElementCount + "%";
-				}
+				}	
 			}
 		</script>
 	</head>
 	
-	<body style="overflow-y: auto;">
+	<body style="overflow-y: auto;" onload="myFunction()">
 		<nav>
 			<ul id="navi">
 				<li id="navi2">
